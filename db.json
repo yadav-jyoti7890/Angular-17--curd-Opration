@@ -1,0 +1,57 @@
+{
+  "create": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "3",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "4",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "add": [
+    {
+      "fullname": "shivani yadav",
+      "age": "24",
+      "email": "shivani@gmail.com",
+      "phone": "808765233",
+      "address": "jabalpur",
+      "id": "dab2"
+    },
+    {
+      "id": "d14b",
+      "fullname": "jaya yadav",
+      "age": "25",
+      "email": "jaya@gmail.com",
+      "phone": "7836764836",
+      "address": "jabalpur"
+    }
+  ]
+}

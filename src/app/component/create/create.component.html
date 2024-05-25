@@ -1,0 +1,37 @@
+
+<form class="container" #add="ngForm" (ngSubmit)="submit(add.value)">
+    <h3>Create</h3>
+    <input type="text" placeholder="Enter Full-Name.#"  name="fullname" required="" ngModel #fname="ngModel">
+    
+     @if(fname.invalid && fname.touched){
+       <p class="danger">This filed is invalid</p>
+     }
+
+
+    <input type="age" placeholder="Enter Age.#" ngModel name="age" required=""  #age="ngModel" minlength="2" maxlength="2">
+
+    @if(age.invalid && age.touched){
+        <p class="danger">Please must be 2 character</p>
+      }
+
+    <input type="email" placeholder="Enter Email.#" ngModel name="email" required  #email="ngModel">
+
+    @if(email.invalid && email.touched){
+        <p class="danger">This filed is invalid</p>
+      }
+
+    <input type="text" placeholder="Enter Phone-No.#" ngModel name="phone" required  required #phone="ngModel" minlength="10" maxlength="10">
+
+    @if(phone.invalid && phone.touched){
+        <p class="danger">please must be 10 character</p>
+      }
+
+    <textarea cols="10" rows="4" placeholder="Enter Address...#" ngModel name="address" required #address="ngModel"></textarea>
+
+    @if(address.invalid && address.touched){
+        <p class="danger">This filed is invalid</p>
+      }
+
+    <button class="green-color" [disabled]="add.invalid">Create</button>
+    <!-- <button class="red-color">Reset</button> -->
+</form>

@@ -1,0 +1,21 @@
+
+
+<form class="container" #update="ngForm" (ngSubmit)="submit(update.value)">
+    <h3>Update Details</h3>
+    <input type="text" placeholder="Enter Full-Name.#" ngModel="{{item?.fullname}}" name="fullname" #fname="ngModel">
+ 
+    <input type="age" placeholder="Enter Age.#" ngModel="{{item?.age}}" name="age"  minlength="2" maxlength="2">
+
+
+    <input type="email" placeholder="Enter Email.#" ngModel="{{item?.email}}" name="email">
+
+
+    <input type="text" placeholder="Enter Phone-No.#" ngModel="{{item?.phone}}" name="phone">
+
+
+    <textarea cols="10" rows="4" placeholder="Enter Address...#" ngModel="{{item?.address}}" name="address"></textarea>
+
+ 
+    <button class="green-color" [disabled]="update.invalid">Update</button>
+    <button class="red-color">Reset</button>
+</form>
